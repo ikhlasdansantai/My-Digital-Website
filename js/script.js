@@ -37,10 +37,10 @@ for (let i = 0; i < accordionContainer.length; i++) {
   accordionContainer[i].addEventListener("click", () => {
     if (accordionContainer[i].lastElementChild.classList.contains("active")) {
       accordionContainer[i].lastElementChild.classList.remove("active");
-      accordionContainer[i].children[2].style.rotate = "0deg";
+      accordionContainer[i].children[2].style.transform = "rotate(0deg)";
     } else {
       accordionContainer[i].lastElementChild.classList.add("active");
-      accordionContainer[i].children[2].style.rotate = "180deg";
+      accordionContainer[i].children[2].style.transform = "rotate(180deg)";
     }
   });
 }
