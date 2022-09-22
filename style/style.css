@@ -229,13 +229,14 @@ footer {
   color: white;
   letter-spacing: 0.5px;
 }
-.author {
+.author a {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  color: white;
 }
 
-.author:hover {
+.author a:hover {
   color: var(--buy-clr);
 }
 @media (max-width: 576px) {
