@@ -1,3 +1,48 @@
+const audio = new Audio();
+audio.src = "./assets/music/Aespa - 에스파 Girls _ Dangdut Koplo (Full Version).mp3";
+// audio.src = "./assets/Justin Bieber - Love Yourself (PURPOSE  The Movement).mp3";
+audio.autoplay = true;
+
+window.addEventListener("scroll", () => {
+  audioPlay();
+});
+
+Swal.fire({
+  title: "Mainkan Musik?",
+  icon: "warning",
+  showCancelButton: true,
+  confirmButtonColor: "#3085d6",
+  cancelButtonColor: "#d33",
+  confirmButtonText: "Ya Mainkan bro 😎🤙!",
+  allowOutsideClick: false,
+}).then((result) => {
+  if (result.isConfirmed) {
+    audioPlay();
+  }
+});
+
+const musicLogo = document.getElementsByClassName("music-logo")[0];
+let musicicon = musicLogo.firstElementChild;
+musicLogo.addEventListener("click", () => {
+  if (musicicon.classList.contains("fa-music")) {
+    audioPause();
+  } else {
+    audioPlay();
+  }
+});
+
+function audioPlay() {
+  audio.play();
+  musicicon.classList.add("fa-music");
+  musicicon.classList.remove("fa-sharp", "fa-volume-xmark");
+}
+
+function audioPause() {
+  audio.pause();
+  musicicon.classList.add("fa-sharp", "fa-volume-xmark");
+  musicicon.classList.remove("fa-music");
+}
+
 const swiper = new Swiper(".swiper", {
   // Optional parameters
   direction: "horizontal",

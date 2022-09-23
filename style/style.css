@@ -150,6 +150,21 @@ main {
   max-width: 100%;
   padding: var(--padding);
 }
+.music-logo {
+  position: fixed;
+  z-index: 1;
+  right: 1.5rem;
+  top: 1.5rem;
+  color: var(--buy-clr);
+  padding: 1rem;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  background-color: #2f3640;
+  animation: infiniteRotate 4s linear infinite;
+  cursor: pointer;
+}
 .content-card-wrapper {
   flex-direction: column;
   align-items: stretch;
@@ -235,10 +250,20 @@ footer {
   cursor: pointer;
   color: white;
 }
-
 .author a:hover {
   color: var(--buy-clr);
 }
+
+/* *Animation */
+@keyframes infiniteRotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @media (max-width: 576px) {
   .profile-fixed {
     right: 0;
