@@ -231,6 +231,9 @@ main {
   transition: 400ms;
   height: inherit;
 }
+.my-projects .active {
+  min-height: 10rem !important;
+}
 .swiper-pagination {
   position: absolute;
   top: 90%;
@@ -290,8 +293,11 @@ footer {
   .onsroll-img-or-video {
     max-width: 7rem;
   }
-  .active {
-    min-height: 45rem;
+  .bonus-contents .active {
+    min-height: 40rem;
+  }
+  .my-projects .active {
+    min-height: 20rem !important;
   }
 }
 @media (min-width: 576px) and (max-height: 500px) {

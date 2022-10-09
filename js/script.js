@@ -13,7 +13,7 @@ Swal.fire({
   showCancelButton: true,
   confirmButtonColor: "#3085d6",
   cancelButtonColor: "#d33",
-  confirmButtonText: "Ya Mainkan bro 😎🤙!",
+  confirmButtonText: "Ya Mainkan bro!",
   allowOutsideClick: false,
 }).then((result) => {
   if (result.isConfirmed) {
@@ -27,6 +27,7 @@ musicLogo.addEventListener("click", () => {
   if (musicicon.classList.contains("fa-music")) {
     audioPause();
   } else {
+    return;
     audioPlay();
   }
 });
