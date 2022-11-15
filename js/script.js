@@ -1,5 +1,7 @@
 const audio = new Audio();
-audio.src = "./assets/music/Aespa - 에스파 Girls _ Dangdut Koplo (Full Version).mp3";
+
+audio.src = "./assets/music/LE SSERAFIM - Impurities.mp3";
+// audio.src = "./assets/music/Aespa - 에스파 Girls _ Dangdut Koplo (Full Version).mp3";
 // audio.src = "./assets/Justin Bieber - Love Yourself (PURPOSE  The Movement).mp3";
 audio.autoplay = true;
 
@@ -27,8 +29,7 @@ musicLogo.addEventListener("click", () => {
   if (musicicon.classList.contains("fa-music")) {
     audioPause();
   } else {
-    return;
-    audioPlay();
+    return audioPlay();
   }
 });
 
