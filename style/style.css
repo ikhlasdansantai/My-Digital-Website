@@ -25,6 +25,9 @@
   max-width: 100%;
 }
 
+.fa-earth-asia {
+  color: #1a1a1a;
+}
 .fa-instagram {
   color: #dd2a7b;
 }
@@ -76,7 +79,7 @@ body {
   font-family: sans-serif;
 }
 .profile {
-  --margin: 3rem auto;
+  --margin: 1rem auto;
   margin: var(--margin);
   max-width: 10rem;
   border-radius: 50%;
@@ -96,8 +99,9 @@ nav {
   line-height: 150%;
 }
 .bio {
+  font-size: 0.825em;
   font-weight: bold;
-  max-width: 40ch;
+  max-width: 42ch;
   letter-spacing: 0.5px;
   margin: auto;
 }
@@ -146,6 +150,7 @@ nav {
   font-size: 1.7rem;
 }
 main {
+  --margin: 2rem 0;
   margin: var(--margin);
   max-width: 100%;
   padding: var(--padding);
@@ -264,6 +269,20 @@ footer {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 325px) {
+  .name {
+    font-size: 2.125rem;
+    line-height: 100%;
+  }
+  h5 {
+    font-size: 0.925rem !important;
+  }
+  main {
+    --margin: 2rem 0;
+    margin: var(--margin);
   }
 }
 

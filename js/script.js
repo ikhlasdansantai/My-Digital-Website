@@ -3,11 +3,11 @@ const audio = new Audio();
 audio.src = "./assets/music/LE SSERAFIM - Impurities.mp3";
 // audio.src = "./assets/music/Aespa - 에스파 Girls _ Dangdut Koplo (Full Version).mp3";
 // audio.src = "./assets/Justin Bieber - Love Yourself (PURPOSE  The Movement).mp3";
-audio.autoplay = true;
+// audio.autoplay = true;
 
-window.addEventListener("scroll", () => {
-  audioPlay();
-});
+// window.addEventListener("scroll", () => {
+//   audioPlay();
+// });
 
 Swal.fire({
   title: "Mainkan Musik?",
@@ -91,6 +91,7 @@ for (let i = 0; i < accordionContainer.length; i++) {
     }
   });
 }
+
 window.addEventListener("scroll", () => {
   window.scrollY > 150 ? document.getElementsByClassName("onscroll-profile")[0].classList.add("show") : document.getElementsByClassName("onscroll-profile")[0].classList.remove("show");
 });
