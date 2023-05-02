@@ -1,6 +1,7 @@
 const audio = new Audio();
 
-audio.src = "./assets/music/LE SSERAFIM - Impurities.mp3";
+// audio.src = "./assets/music/LE SSERAFIM - Impurities.mp3";
+audio.src = "./assets/music/FIFTY FIFTY - Cupid (Koplo is Me Remix).mp3";
 // audio.src = "./assets/music/Aespa - 에스파 Girls _ Dangdut Koplo (Full Version).mp3";
 // audio.src = "./assets/Justin Bieber - Love Yourself (PURPOSE  The Movement).mp3";
 // audio.autoplay = true;
@@ -71,12 +72,12 @@ const swiper = new Swiper(".swiper", {
   },
 });
 
-let typed = new Typed(".profession", {
-  strings: ["Study", "Weeekly", "Liz From IVE", "Dubstep Music"],
-  typeSpeed: 150,
-  backSpeed: 150,
-  loop: true,
-});
+// let typed = new Typed(".profession", {
+//   strings: ["Study", "Weeekly", "Liz From IVE", "Dubstep Music"],
+//   typeSpeed: 150,
+//   backSpeed: 150,
+//   loop: true,
+// });
 
 let accordionContainer = document.querySelectorAll(".accordion");
 
