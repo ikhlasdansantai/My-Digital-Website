@@ -49,6 +49,9 @@
 .fa-compact-disc {
   color: var(--buy-clr);
 }
+.linkedin {
+  color: #0e76a8;
+}
 /* 
     *End Of Utilities 
                     */
@@ -199,8 +202,9 @@ main {
 .card-accordion h5 {
   margin: auto !important;
 }
-.content-card i {
+:is(.content-card i, .content-card svg) {
   font-size: 1.3rem;
+  width: 1.3rem;
   transition: 300ms;
 }
 .content-card h5 {
