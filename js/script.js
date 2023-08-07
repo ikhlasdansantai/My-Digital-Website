@@ -46,31 +46,31 @@ function audioPause() {
   musicicon.classList.remove("fa-music");
 }
 
-const swiper = new Swiper(".swiper", {
-  // Optional parameters
-  direction: "horizontal",
-  loop: true,
-  speed: 500,
-  spaceBetween: 20,
-  grabCursor: true,
+// const swiper = new Swiper(".swiper", {
+//   // Optional parameters
+//   direction: "horizontal",
+//   loop: true,
+//   speed: 500,
+//   spaceBetween: 20,
+//   grabCursor: true,
 
-  autoplay: {
-    delay: 5000,
-  },
+//   autoplay: {
+//     delay: 5000,
+//   },
 
-  pagination: {
-    el: ".swiper-pagination",
-  },
+//   pagination: {
+//     el: ".swiper-pagination",
+//   },
 
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+//   navigation: {
+//     nextEl: ".swiper-button-next",
+//     prevEl: ".swiper-button-prev",
+//   },
 
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
-});
+//   scrollbar: {
+//     el: ".swiper-scrollbar",
+//   },
+// });
 
 // let typed = new Typed(".profession", {
 //   strings: ["Study", "Weeekly", "Liz From IVE", "Dubstep Music"],
@@ -79,19 +79,20 @@ const swiper = new Swiper(".swiper", {
 //   loop: true,
 // });
 
-let accordionContainer = document.querySelectorAll(".accordion");
+// For Accordion
+// let accordionContainer = document.querySelectorAll(".accordion");
 
-for (let i = 0; i < accordionContainer.length; i++) {
-  accordionContainer[i].addEventListener("click", () => {
-    if (accordionContainer[i].lastElementChild.classList.contains("active")) {
-      accordionContainer[i].lastElementChild.classList.remove("active");
-      accordionContainer[i].children[2].style.transform = "rotate(0deg)";
-    } else {
-      accordionContainer[i].lastElementChild.classList.add("active");
-      accordionContainer[i].children[2].style.transform = "rotate(180deg)";
-    }
-  });
-}
+// for (let i = 0; i < accordionContainer.length; i++) {
+//   accordionContainer[i].addEventListener("click", () => {
+//     if (accordionContainer[i].lastElementChild.classList.contains("active")) {
+//       accordionContainer[i].lastElementChild.classList.remove("active");
+//       accordionContainer[i].children[2].style.transform = "rotate(0deg)";
+//     } else {
+//       accordionContainer[i].lastElementChild.classList.add("active");
+//       accordionContainer[i].children[2].style.transform = "rotate(180deg)";
+//     }
+//   });
+// }
 
 window.addEventListener("scroll", () => {
   window.scrollY > 150 ? document.getElementsByClassName("onscroll-profile")[0].classList.add("show") : document.getElementsByClassName("onscroll-profile")[0].classList.remove("show");
