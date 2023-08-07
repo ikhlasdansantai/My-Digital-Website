@@ -59,7 +59,7 @@
 /* 
   *Other Style
               */
-#particles-js {
+/* #particles-js {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -67,15 +67,38 @@
   right: 0;
   min-height: 100vh;
   z-index: -2;
+} */
+
+#background-wallpaper {
+  /* min-height: 200vh; */
+  height: auto;
+  position: absolute;
+  z-index: -2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-position: center;
+}
+#background-wallpaper video {
+  margin: auto;
+  object-position: center;
+  object-fit: contain;
+  display: block;
+  max-width: 100%;
+  filter: brightness(85%);
+}
+#background-wallpaper .desktop {
+  display: none;
 }
 .container-all {
   justify-content: space-between;
   align-items: stretch;
   flex-direction: column;
-  min-height: 100vh;
+  /* min-height: 100vh; */
+  overflow: hidden;
 }
 body {
-  min-height: 100vh;
+  /* height: 100vh; */
   font-size: 1rem;
   line-height: 1.5em;
   background: linear-gradient(to bottom, #232526, #414345);
@@ -91,7 +114,7 @@ body {
 }
 nav {
   text-align: center;
-  color: #fff;
+  color: #fffffe;
 }
 .name-bio-wrapper {
   flex-direction: column;
@@ -153,7 +176,7 @@ nav {
   font-size: 1.7rem;
 }
 main {
-  --margin: 2rem 0;
+  --margin: 2rem 0 1rem 0;
   margin: var(--margin);
   max-width: 100%;
   padding: var(--padding);
@@ -334,6 +357,7 @@ footer {
     bottom: -10rem;
   }
 }
+
 @media (min-width: 992px) {
   .container-all {
     display: grid;
@@ -360,5 +384,11 @@ footer {
   }
   .onscroll-profile .name {
     margin-right: 8rem;
+  }
+  #background-wallpaper .desktop {
+    display: block;
+  }
+  #background-wallpaper .mobile {
+    display: none;
   }
 }
